@@ -43,4 +43,66 @@
 
 3.同步锁（jvm）和锁接口Lock？
 
+    同步锁：synchronized关键字；一个线程访问同步的区域（代码块，方法）时，其他线程访问会被阻塞；
+    1、 无论synchronized关键字加在方法上还是对象上，如果它作用的对象是非静态的，则它取得的锁是对象；如果synchronized作用的对象是一个静态方法或一个类，则它取得的锁是对类，该类所有的对象同一把锁。
+    2、每个对象只有一个锁（lock）与之相关联，谁拿到这个锁谁就可以运行它所控制的那段代码。
+    3、实现同步是要很大的系统开销作为代价的，甚至可能造成死锁，所以尽量避免无谓的同步控制
 
+    具体用法：每个对象只有一把锁与之关联；；
+    1.修饰代码块：{} 对象锁
+    2.修饰非静态方法：对象锁
+    3.修饰静态方法：类的所有对象是一把锁，类锁；
+    4.修饰类：类锁
+    面试题:在发生继承关系时，子类可以重写父类的同步方法而同步吗？
+    回答：不能，synchronized关键字不被继承，
+
+    synchrionized同步锁的关键点：
+    1.多个线程共用同一把锁才会发生互斥；
+    2.加synchronized关键字，相当于加锁操作，释放锁是由jvm操作的；
+    3.synchronized锁是可重入的互斥锁（悲观锁）；
+    4.同一个类中的同步方法可以调用另一个同步方法（可重入）
+    5.子类的同步方法可以调用父类的同步方法(可重入+this对象锁)
+    6.静态同步方法和非静态同步方法互斥吗？（不互斥，原因：不是同一把锁，一个是this对象锁，一个是类锁）
+
+    面试题：使用synchronized关键字还是Lock接口的锁好呢？
+    我们先看看他们的区别：
+        synchronized是关键字，是JVM层面的底层啥都帮我们做了，而Lock是一个接口，是JDK层面的有丰富的API。
+        synchronized会自动释放锁，而Lock必须手动释放锁。
+       synchronized是不可中断的，Lock可以中断也可以不中断。
+      通过Lock可以知道线程有没有拿到锁，而synchronized不能。
+       synchronized能锁住方法和代码块，而Lock只能锁住代码块。
+       Lock可以使用读锁提高多线程读效率。
+       synchronized是非公平锁，ReentrantLock可以控制是否是公平锁。
+       两者一个是JDK层面的一个是JVM层面的，我觉得最大的区别其实在:我们是否需要丰富的api，还有一个我们的场景。
+
+       比如滴滴，我早上有打车高峰，我代码使用了大量的synchronized，有什么问题？锁升级过程是不可逆的，
+       过了高峰我们还是重量级的锁，那效率是不是大打折扣了？这个时候你用Lock是不是很好？
+       场景是一定要考虑的，我现在告诉你哪个好都是扯淡，因为脱离了业务，一切技术讨论都没有了价值
+
+    面试题：synchronized同步锁原理？
+    回答：
+    每个对象有一个monitor,当monitor被占用时就会处于锁定状态,线程执行monitorenter指令时尝试获取monitor的所有权,过程如下：
+    1.如果monitor的进入数为0,则该线程进入monitor,然后将进入数设置为1,该线程即为monitor的所有者.
+    2.如果线程已经占有该monitor,只是重新进入,则进入monitor的进入数加1.
+    3.如果其他线程已经占用了monitor,则该线程进入阻塞状态,直到monitor的进入数为0,再重新尝试获取monitor的所有权.
+
+=============================》》》
+    Lock接口：锁住代码块
+        tryLock():加锁
+        lock():加锁
+        unLock():释放锁
+    具体实现类：
+    读读共享，写写互斥，读写互斥；
+    1.ReentrantLock：可重入，互斥，悲观，
+    2.ReentrantReadWriteLock.ReadLock：读锁
+    3.ReentrantReadWriteLock.WriteLock:写锁
+
+    面试题：简述ReentrantLock的原理？
+    ReentrantLock是基于AQS实现的，AQS的基础又是CAS，
+    AbstractQueuedSynchronizer：AQS抽象队列同步器，由一个FIFO的队列实现的，节点Node；
+
+    AQS具体应用：
+    CountDownLatch:门闩
+    FutureTask：
+    Semaphore：信号量
+    ReentrantLock：可重入锁
