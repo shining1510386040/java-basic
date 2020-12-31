@@ -1,0 +1,42 @@
+1.Lambada表达式语法？
+    参数列表+箭头+函数体
+    例如：
+    (Type1 param1, Type2 param2, ..., TypeN paramN) -> {  statment1;  statment2;  //.............  return statmentM;}
+    (param1,param2, ..., paramN) -> {  statment1;  statment2;  //.............  return statmentM;}
+    param1 -> {  statment1;  statment2;  //.............  return statmentM;}
+    param1 -> statment
+2.函数接口？
+    函数接口是只有一个抽象方法的接口， 用作 Lambda 表达式的返回类型。
+    接口包路径为java.util.function，然后接口类上面都有@FunctionalInterface这个注解
+
+    例如：
+    Consumer<T>    消费执行  accept()
+    Function<T,R>  计算并返回结果R  apply()
+    Predicate<T>   断言 判断真假   test()
+    Supplier<T>    生产T   get()
+    BiFunction<T,U,R> 根据参数T，U得到计算得到结果R
+=========================================================================>>>>>>>>>>>>>
+3.流：方便处理jdk集合的
+    允许你以声明性方式处理数据集合（通过查询语句来表达，而不是临时编写一个实现）。就现在来说，
+    你可以把它们看成遍历数据集的高级迭代器。此外，流还可以透明地并行处理，你无需写任何多线程代码了！
+
+4.方法引用？::
+    a->a.getA()的简写形式
+    例如：ClassA::getName()
+=================================================================================>>>>>>>
+5.新增日期处理工具
+    LocalDate      日期
+    LocalTime      时间
+    LocalDateTime  日期时间
+
+    now相关的方法可以获取当前日期或时间，
+    of方法可以创建对应的日期或时间，
+    parse方法可以解析日期或时间，
+    get方法可以获取日期或时间信息，
+    with方法可以设置日期或时间信息，
+    plus或minus方法可以增减日期或时间信息；
+
+    TemporalAdjusters  日期调整
+   这个类在日期调整时非常有用，比如得到当月的第一天、最后一天，当年的第一天、最后一天，下一周或前一周的某天等。
+
+    DateTimeFormatter 日期格式化
