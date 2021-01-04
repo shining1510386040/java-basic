@@ -10,19 +10,26 @@ package com.demo.threadandlock.newcodePritice.orderprint;
  */
 public class PrintA implements Runnable {
 
-    private volatile boolean flag = true;
+    private volatile boolean flag;
+
+    private Object lock;
+
+    public PrintA(boolean flag, Object lock) {
+        this.flag = flag;
+        this.lock = lock;
+    }
 
     @Override
     public void run() {
         while (true) {
-            synchronized (Object.class) {
+            synchronized (lock) {
                 try {
                     if (flag) {
                         System.out.print("A");
                         flag = false;
-                        this.wait();
+                        lock.notifyAll();
                     } else {
-                        this.notify();
+                        lock.wait();
                     }
                 } catch (InterruptedException e) {
                     e.printStackTrace();
