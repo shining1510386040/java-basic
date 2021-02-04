@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>java.util.Map</OriginalElement>
+  <nodes>
+    <node x="0.0" y="170.0">java.util.concurrent.ConcurrentSkipListMap</node>
+    <node x="250.76136363636363" y="90.0">java.util.AbstractMap</node>
+    <node x="203.99999999999997" y="170.0">java.util.TreeMap</node>
+    <node x="333.375" y="0.0">java.util.Map</node>
+    <node x="449.625" y="170.0">java.util.concurrent.ConcurrentHashMap</node>
+    <node x="326.625" y="170.0">java.util.HashMap</node>
+    <node x="81.76136363636363" y="90.0">java.util.SortedMap</node>
+    <node x="445.7007575757575" y="90.0">java.util.Hashtable</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="java.util.concurrent.ConcurrentSkipListMap" target="java.util.Map">
+      <point x="-61.33333333333337" y="-15.0" />
+      <point x="30.66666666666663" y="150.0" />
+      <point x="48.39393939393938" y="150.0" />
+      <point x="48.39393939393938" y="50.0" />
+      <point x="339.54166666666663" y="50.0" />
+      <point x="-30.833333333333314" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.ConcurrentSkipListMap" target="java.util.SortedMap">
+      <point x="0.0" y="-15.0" />
+      <point x="92.0" y="150.0" />
+      <point x="110.26136363636363" y="150.0" />
+      <point x="-28.5" y="15.0" />
+    </edge>
+    <edge source="java.util.HashMap" target="java.util.Map">
+      <point x="25.75" y="-15.0" />
+      <point x="403.875" y="150.0" />
+      <point x="406.625" y="150.0" />
+      <point x="406.625" y="70.0" />
+      <point x="376.54166666666663" y="70.0" />
+      <point x="6.166666666666686" y="15.0" />
+    </edge>
+    <edge source="java.util.Hashtable" target="java.util.Map">
+      <point x="0.0" y="-15.0" />
+      <point x="498.7007575757575" y="60.0" />
+      <point x="388.875" y="60.0" />
+      <point x="18.5" y="15.0" />
+    </edge>
+    <edge source="java.util.HashMap" target="java.util.AbstractMap">
+      <point x="-25.75" y="-15.0" />
+      <point x="352.375" y="150.0" />
+      <point x="328.2613636363636" y="150.0" />
+      <point x="15.5" y="15.0" />
+    </edge>
+    <edge source="java.util.AbstractMap" target="java.util.Map">
+      <point x="0.0" y="-15.0" />
+      <point x="312.7613636363636" y="70.0" />
+      <point x="364.20833333333326" y="70.0" />
+      <point x="-6.166666666666686" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.ConcurrentHashMap" target="java.util.AbstractMap">
+      <point x="-42.0" y="-15.0" />
+      <point x="491.625" y="140.0" />
+      <point x="359.2613636363636" y="140.0" />
+      <point x="46.5" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.ConcurrentHashMap" target="java.util.Map">
+      <point x="42.0" y="-15.0" />
+      <point x="575.625" y="50.0" />
+      <point x="401.20833333333337" y="50.0" />
+      <point x="30.83333333333337" y="15.0" />
+    </edge>
+    <edge source="java.util.TreeMap" target="java.util.SortedMap">
+      <point x="-25.0" y="-15.0" />
+      <point x="228.99999999999997" y="140.0" />
+      <point x="167.26136363636363" y="140.0" />
+      <point x="28.5" y="15.0" />
+    </edge>
+    <edge source="java.util.SortedMap" target="java.util.Map">
+      <point x="0.0" y="-15.0" />
+      <point x="138.76136363636363" y="60.0" />
+      <point x="351.875" y="60.0" />
+      <point x="-18.5" y="15.0" />
+    </edge>
+    <edge source="java.util.TreeMap" target="java.util.AbstractMap">
+      <point x="25.0" y="-15.0" />
+      <point x="279.0" y="150.0" />
+      <point x="297.2613636363636" y="150.0" />
+      <point x="-15.5" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.ConcurrentSkipListMap" target="java.util.AbstractMap">
+      <point x="61.33333333333334" y="-15.0" />
+      <point x="153.33333333333334" y="150.0" />
+      <point x="266.2613636363636" y="150.0" />
+      <point x="-46.5" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="363.5" y="100.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

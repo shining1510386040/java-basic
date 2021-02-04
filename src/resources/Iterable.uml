@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>java.lang.Iterable</OriginalElement>
+  <nodes>
+    <node x="1911.75" y="280.0">java.util.AbstractList</node>
+    <node x="787.1250000000001" y="380.0">java.util.AbstractQueue</node>
+    <node x="1235.0" y="160.0">java.util.AbstractCollection</node>
+    <node x="967.0000000000001" y="480.0">java.util.concurrent.SynchronousQueue</node>
+    <node x="1259.5" y="80.0">java.util.Collection</node>
+    <node x="159.85335144927558" y="160.0">java.util.Set</node>
+    <node x="1020.2500000000001" y="280.0">java.util.concurrent.BlockingQueue</node>
+    <node x="229.0000000000001" y="380.0">java.util.concurrent.CopyOnWriteArraySet</node>
+    <node x="635.0000000000001" y="480.0">java.util.concurrent.LinkedBlockingQueue</node>
+    <node x="1148.0" y="480.0">java.util.concurrent.ArrayBlockingQueue</node>
+    <node x="2103.75" y="160.0">java.util.List</node>
+    <node x="918.8750000000001" y="160.0">java.util.Queue</node>
+    <node x="425.0000000000001" y="480.0">java.util.concurrent.ConcurrentLinkedQueue</node>
+    <node x="2048.75" y="280.0">java.util.concurrent.CopyOnWriteArrayList</node>
+    <node x="1911.75" y="380.0">com.sun.jmx.remote.internal.ArrayQueue</node>
+    <node x="143.3760869565217" y="280.0">java.util.AbstractSet</node>
+    <node x="1489.75" y="280.0">java.util.Deque</node>
+    <node x="0.0" y="380.0">java.util.TreeSet</node>
+    <node x="1267.0" y="0.0">java.lang.Iterable</node>
+    <node x="2163.0" y="380.0">java.util.ArrayList</node>
+    <node x="113.00000000000011" y="380.0">java.util.HashSet</node>
+    <node x="829.0000000000001" y="480.0">java.util.concurrent.DelayQueue</node>
+    <node x="1785.75" y="380.0">java.util.LinkedList</node>
+    <node x="235.94855072463747" y="480.0">java.util.LinkedHashSet</node>
+    <node x="2247.75" y="280.0">java.util.Collections.UnmodifiableList</node>
+    <node x="1420.75" y="380.0">java.util.concurrent.BlockingDeque</node>
+    <node x="1575.75" y="380.0">java.util.concurrent.ConcurrentLinkedDeque</node>
+    <node x="1357.7500000000002" y="480.0">java.util.concurrent.LinkedBlockingDeque</node>
+    <node x="1283.75" y="380.0">java.util.ArrayDeque</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="java.util.AbstractQueue" target="java.util.AbstractCollection">
+      <point x="33.75" y="-15.0" />
+      <point x="888.3750000000001" y="330.0" />
+      <point x="799.2094202898548" y="330.0" />
+      <point x="799.2094202898548" y="260.0" />
+      <point x="1281.8000000000002" y="260.0" />
+      <point x="-31.200000000000045" y="15.0" />
+    </edge>
+    <edge source="java.util.TreeSet" target="java.util.Set">
+      <point x="-23.25" y="-15.0" />
+      <point x="23.25" y="240.0" />
+      <point x="168.22835144927558" y="240.0" />
+      <point x="-25.125" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.ArrayBlockingQueue" target="java.util.AbstractQueue">
+      <point x="-41.75" y="-15.0" />
+      <point x="1189.75" y="440.0" />
+      <point x="888.3750000000001" y="440.0" />
+      <point x="33.75" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.CopyOnWriteArraySet" target="java.util.AbstractSet">
+      <point x="0.0" y="-15.0" />
+      <point x="317.5000000000001" y="360.0" />
+      <point x="240.04275362318822" y="360.0" />
+      <point x="38.666666666666515" y="15.0" />
+    </edge>
+    <edge source="java.util.LinkedHashSet" target="java.util.Set">
+      <point x="33.5" y="-15.0" />
+      <point x="336.44855072463747" y="460.0" />
+      <point x="416.5000000000001" y="460.0" />
+      <point x="416.5000000000001" y="240.0" />
+      <point x="218.47835144927558" y="240.0" />
+      <point x="25.125" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.ArrayBlockingQueue" target="java.util.concurrent.BlockingQueue">
+      <point x="41.75" y="-15.0" />
+      <point x="1273.25" y="360.0" />
+      <point x="1114.75" y="360.0" />
+      <point x="27.0" y="15.0" />
+    </edge>
+    <edge source="java.util.Collections.UnmodifiableList" target="java.util.List">
+      <point x="-36.5" y="-15.0" />
+      <point x="2284.25" y="250.0" />
+      <point x="2164.95" y="250.0" />
+      <point x="27.19999999999999" y="15.0" />
+    </edge>
+    <edge source="java.util.AbstractQueue" target="java.util.Queue">
+      <point x="-33.75" y="-15.0" />
+      <point x="820.8750000000001" y="340.0" />
+      <point x="788.2094202898548" y="340.0" />
+      <point x="788.2094202898548" y="240.0" />
+      <point x="951.1250000000001" y="240.0" />
+      <point x="-10.75" y="15.0" />
+    </edge>
+    <edge source="java.util.Set" target="java.util.Collection">
+      <point x="0.0" y="-15.0" />
+      <point x="193.35335144927558" y="130.0" />
+      <point x="1270.2000000000003" y="130.0" />
+      <point x="-42.799999999999955" y="15.0" />
+    </edge>
+    <edge source="java.util.Collection" target="java.lang.Iterable">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.LinkedBlockingQueue" target="java.util.AbstractQueue">
+      <point x="43.5" y="-15.0" />
+      <point x="765.5000000000001" y="460.0" />
+      <point x="820.8750000000001" y="460.0" />
+      <point x="-33.75" y="15.0" />
+    </edge>
+    <edge source="java.util.Collections.UnmodifiableList" target="java.util.Collection">
+      <point x="36.5" y="-15.0" />
+      <point x="2357.25" y="130.0" />
+      <point x="1355.8000000000002" y="130.0" />
+      <point x="42.799999999999955" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.BlockingDeque" target="java.util.concurrent.BlockingQueue">
+      <point x="-33.75" y="-15.0" />
+      <point x="1454.5" y="350.0" />
+      <point x="1141.75" y="350.0" />
+      <point x="54.0" y="15.0" />
+    </edge>
+    <edge source="java.util.AbstractCollection" target="java.util.Collection">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.BlockingQueue" target="java.util.Queue">
+      <point x="0.0" y="-15.0" />
+      <point x="1087.75" y="240.0" />
+      <point x="972.6250000000001" y="240.0" />
+      <point x="10.75" y="15.0" />
+    </edge>
+    <edge source="java.util.LinkedList" target="java.util.AbstractList">
+      <point x="35.33333333333337" y="-15.0" />
+      <point x="1874.0833333333335" y="360.0" />
+      <point x="1931.25" y="360.0" />
+      <point x="-39.0" y="15.0" />
+    </edge>
+    <edge source="java.util.ArrayDeque" target="java.util.Deque">
+      <point x="29.25" y="-15.0" />
+      <point x="1371.5" y="360.0" />
+      <point x="1500.5" y="360.0" />
+      <point x="-32.25" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.LinkedBlockingDeque" target="java.util.concurrent.BlockingDeque">
+      <point x="43.499999999999886" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.BlockingDeque" target="java.util.Deque">
+      <point x="33.75" y="-15.0" />
+      <point x="-10.75" y="15.0" />
+    </edge>
+    <edge source="java.util.LinkedList" target="java.util.List">
+      <point x="0.0" y="-15.0" />
+      <point x="1838.75" y="250.0" />
+      <point x="2110.55" y="250.0" />
+      <point x="-27.199999999999932" y="15.0" />
+    </edge>
+    <edge source="java.util.TreeSet" target="java.util.AbstractSet">
+      <point x="23.25" y="-15.0" />
+      <point x="69.75" y="360.0" />
+      <point x="162.7094202898552" y="360.0" />
+      <point x="-38.666666666666515" y="15.0" />
+    </edge>
+    <edge source="java.util.AbstractList" target="java.util.AbstractCollection">
+      <point x="-29.25" y="-15.0" />
+      <point x="1941.0" y="210.0" />
+      <point x="1375.4" y="210.0" />
+      <point x="62.40000000000009" y="15.0" />
+    </edge>
+    <edge source="java.util.Deque" target="java.util.Queue">
+      <point x="0.0" y="-15.0" />
+      <point x="1532.75" y="230.0" />
+      <point x="994.1250000000001" y="230.0" />
+      <point x="32.25" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.ConcurrentLinkedDeque" target="java.util.AbstractCollection">
+      <point x="47.5" y="-15.0" />
+      <point x="1718.25" y="220.0" />
+      <point x="1344.2000000000003" y="220.0" />
+      <point x="31.200000000000045" y="15.0" />
+    </edge>
+    <edge source="java.util.LinkedHashSet" target="java.util.HashSet">
+      <point x="-33.5" y="-15.0" />
+      <point x="269.44855072463747" y="460.0" />
+      <point x="161.0000000000001" y="460.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.LinkedBlockingQueue" target="java.util.concurrent.BlockingQueue">
+      <point x="-43.5" y="-15.0" />
+      <point x="678.5000000000001" y="350.0" />
+      <point x="1033.75" y="350.0" />
+      <point x="-54.0" y="15.0" />
+    </edge>
+    <edge source="java.util.AbstractSet" target="java.util.Set">
+      <point x="-29.0" y="-15.0" />
+      <point x="172.3760869565217" y="260.0" />
+      <point x="201.72835144927558" y="260.0" />
+      <point x="8.375" y="15.0" />
+    </edge>
+    <edge source="java.util.ArrayList" target="java.util.List">
+      <point x="24.75" y="-15.0" />
+      <point x="2237.25" y="260.0" />
+      <point x="2151.3500000000004" y="260.0" />
+      <point x="13.600000000000023" y="15.0" />
+    </edge>
+    <edge source="java.util.ArrayList" target="java.util.AbstractList">
+      <point x="-24.75" y="-15.0" />
+      <point x="2187.75" y="360.0" />
+      <point x="2009.25" y="360.0" />
+      <point x="39.0" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.ConcurrentLinkedQueue" target="java.util.AbstractQueue">
+      <point x="47.5" y="-15.0" />
+      <point x="567.5000000000001" y="450.0" />
+      <point x="798.3750000000001" y="450.0" />
+      <point x="-56.25" y="15.0" />
+    </edge>
+    <edge source="java.util.HashSet" target="java.util.Set">
+      <point x="-24.0" y="-15.0" />
+      <point x="137.0000000000001" y="350.0" />
+      <point x="126.75000000000011" y="350.0" />
+      <point x="126.75000000000011" y="250.0" />
+      <point x="184.97835144927558" y="250.0" />
+      <point x="-8.375" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.SynchronousQueue" target="java.util.concurrent.BlockingQueue">
+      <point x="40.25" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.CopyOnWriteArrayList" target="java.util.List">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.DelayQueue" target="java.util.AbstractQueue">
+      <point x="-29.5" y="-15.0" />
+      <point x="858.5000000000001" y="460.0" />
+      <point x="843.3750000000001" y="460.0" />
+      <point x="-11.25" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.SynchronousQueue" target="java.util.AbstractQueue">
+      <point x="-40.25" y="-15.0" />
+      <point x="1007.2500000000001" y="450.0" />
+      <point x="865.8750000000001" y="450.0" />
+      <point x="11.25" y="15.0" />
+    </edge>
+    <edge source="java.util.Queue" target="java.util.Collection">
+      <point x="0.0" y="-15.0" />
+      <point x="961.8750000000001" y="140.0" />
+      <point x="1291.6" y="140.0" />
+      <point x="-21.40000000000009" y="15.0" />
+    </edge>
+    <edge source="java.util.List" target="java.util.Collection">
+      <point x="0.0" y="-15.0" />
+      <point x="2137.75" y="140.0" />
+      <point x="1334.4" y="140.0" />
+      <point x="21.40000000000009" y="15.0" />
+    </edge>
+    <edge source="java.util.AbstractList" target="java.util.List">
+      <point x="29.25" y="-15.0" />
+      <point x="1999.5" y="260.0" />
+      <point x="2124.15" y="260.0" />
+      <point x="-13.599999999999994" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.ConcurrentLinkedQueue" target="java.util.Queue">
+      <point x="-47.5" y="-15.0" />
+      <point x="472.5000000000001" y="230.0" />
+      <point x="929.6250000000001" y="230.0" />
+      <point x="-32.25" y="15.0" />
+    </edge>
+    <edge source="com.sun.jmx.remote.internal.ArrayQueue" target="java.util.AbstractList">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.LinkedBlockingDeque" target="java.util.AbstractQueue">
+      <point x="-43.500000000000114" y="-15.0" />
+      <point x="1401.25" y="430.0" />
+      <point x="910.8750000000001" y="430.0" />
+      <point x="56.25" y="15.0" />
+    </edge>
+    <edge source="java.util.ArrayDeque" target="java.util.AbstractCollection">
+      <point x="-29.25" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="java.util.AbstractSet" target="java.util.AbstractCollection">
+      <point x="29.0" y="-15.0" />
+      <point x="230.3760869565217" y="250.0" />
+      <point x="1250.6000000000001" y="250.0" />
+      <point x="-62.39999999999998" y="15.0" />
+    </edge>
+    <edge source="java.util.HashSet" target="java.util.AbstractSet">
+      <point x="24.0" y="-15.0" />
+      <point x="185.0000000000001" y="360.0" />
+      <point x="201.3760869565217" y="360.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="java.util.LinkedList" target="java.util.Deque">
+      <point x="-35.33333333333337" y="-15.0" />
+      <point x="1803.4166666666667" y="350.0" />
+      <point x="1565.0" y="350.0" />
+      <point x="32.25" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.DelayQueue" target="java.util.concurrent.BlockingQueue">
+      <point x="29.5" y="-15.0" />
+      <point x="917.5000000000001" y="460.0" />
+      <point x="932.6250000000001" y="460.0" />
+      <point x="932.6250000000001" y="360.0" />
+      <point x="1060.75" y="360.0" />
+      <point x="-27.0" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.ConcurrentLinkedDeque" target="java.util.Deque">
+      <point x="-47.5" y="-15.0" />
+      <point x="1623.25" y="360.0" />
+      <point x="1543.5" y="360.0" />
+      <point x="10.75" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.235211267605634" x="1187.0000000000005" y="231.73204104903078" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
