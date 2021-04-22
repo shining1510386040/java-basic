@@ -295,3 +295,22 @@ and so on
           标记、位置、限制和容量值遵守以下不变式：
               0 <= mark <= position <= limit <= capacity 
           新创建的缓冲区总有一个 0 position 和一个未定义的mark 。初始limit 可以为 0，也可以为其他值，这取决于缓冲区类型及其构建方式。一般情况下，缓冲区的初始内容是未定义的。 
+          
+# java中的代理？
+   1.jdk动态代理：
+   特点：只能为interface接口生成代理类，换言之，只能代理接口
+   核心接口：
+   Proxy：
+   InvocationHandler：
+   2.cglib动态代理：
+   特点：能为Class类生成代理类，换言之，可以代理类
+   核心接口：
+   MethodInteceptor：
+   Enhancer：
+   比较：
+    * CGLib动态代理创建代理实例速度慢，但是运行速度快；JDK动态代理创建实例速度快，但是运行速度慢。如果实例是单例的，
+    * 推荐使用CGLib方式动态代理，反之则使用JDK方式进行动态代理。Spring的实例默认是单例，所以这时候使用CGLib性能高。 
+## leetcode 刷题算法总结
+
+https://blog.csdn.net/zy450271923/article/details/105298999
+

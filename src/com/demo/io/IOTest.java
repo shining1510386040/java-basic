@@ -28,7 +28,6 @@ public class IOTest {
         //
         PipedInputStream pipedInputStream = new PipedInputStream();
         // ============>>> 字符流
-//        todo ...
 //        Reader reader = new BufferedReader();
 //        InputStreamReader
 //                FileReader
